@@ -3,11 +3,19 @@ import time
 import pyautogui
 from jumper import Jumper
 from spammer import Spammer
+from fisher import Fisher
 import tool
+
 
 def button_smasher():
     spammer = Spammer()
     spammer.start()
+
+
+def fishing():
+    fisher = Fisher()
+    fisher.start()
+
 
 def d2_gamble():
     print("Starting D2 gamble routine in 3 seconds")
@@ -36,6 +44,7 @@ def menu():
     print("   1 - Lost Ark AFK killer")
     print("   2 - Diablo 2 gambler")
     print("   3 - Lost Ark button smasher")
+    print("   4 - Lost Ark fisher")
     print("   9 - Exit")
     option = input("Enter option number ")
     if option == "1":
@@ -44,6 +53,8 @@ def menu():
         d2_gamble()
     elif option == "3":
         button_smasher()
+    elif option == "4":
+        fishing()
     elif option == "9":
         exit(0)
     else:
