@@ -7,10 +7,10 @@ import msvcrt
 
 
 def jump():
-    pyautogui.keyDown('space')
+    pyautogui.keyDown('8')
     time.sleep(0.10)
-    pyautogui.keyUp('space')
-    time.sleep(randint(1, 15))
+    pyautogui.keyUp('8')
+    time.sleep(randint(30, 40))
 
 
 def clear_console():
