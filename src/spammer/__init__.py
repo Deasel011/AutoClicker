@@ -1,4 +1,3 @@
-from src.tool import get_position
 import pyautogui
 import time
 import os
@@ -7,6 +6,15 @@ import json
 import subprocess
 from pynput import keyboard
 
+def get_position(message):
+    print(message)
+    print("3")
+    time.sleep(1)
+    print("2")
+    time.sleep(1)
+    print("1")
+    time.sleep(1)
+    return pyautogui.position()
 
 def cast(key):
     pyautogui.keyDown(key)
